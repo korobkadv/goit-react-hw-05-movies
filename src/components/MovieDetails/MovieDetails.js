@@ -49,10 +49,10 @@ export const MovieDetails = () => {
 
   return (
     <div>
-      {isLoading && <Loader />}
       <Link to={backLinkRef.current.state?.from ?? '/'}>
         <BackLink>Back</BackLink>
       </Link>
+      {isLoading && <Loader />}
       {movieDetails.poster_path && (
         <CardWrapper>
           <MovieCard>

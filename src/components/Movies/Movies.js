@@ -98,7 +98,7 @@ export const Movies = () => {
                 </Link>
               </FoundMoviesItem>
             ))
-          : query !== '' && 'No movies found'}
+          : (query !== '') & !isLoading && 'No movies found'}
       </FoundMoviesList>
     </div>
   );
